@@ -48,4 +48,10 @@ public class LoginGeneratorTest {
         String actual = this.lg.generateLoginForNomAndPrenom("Dùrand","Paul");
         assertEquals("PDUR",actual);
     }
+
+    @Test
+    public void CTPaulDu() {
+        String actual = this.lg.generateLoginForNomAndPrenom("Du","Paul");
+        assertEquals("PDU",actual);
+    }
 }
